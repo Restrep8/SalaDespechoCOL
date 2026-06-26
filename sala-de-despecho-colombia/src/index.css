@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Syne:wght@400;700;800&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-brand-beige: #FAF9F6;
+  --color-brand-cream: #FFFFFF;
+  --color-brand-dark: #1A1A1A;
+  --color-brand-gold: #facc15;
+  --color-brand-gold-light: #C2412E;
+  --color-brand-mint: #E5E2D9;
+  --color-brand-pink: #F7F5F0;
+  --color-brand-coral: #B31B1B;
+  --color-brand-yellow: #FAF9F6;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 3s ease-in-out infinite;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Custom styling for matching retro shadowed outline */
+.retro-text-shadow {
+  text-shadow: 
+    3px 3px 0px #C2412E,
+    6px 6px 0px rgba(0,0,0,0.8);
+}
+
+.text-stroke-black {
+  -webkit-text-stroke: 1.5px black;
+}
+
+/* Hide scrollbars globally for all browsers/devices */
+*::-webkit-scrollbar {
+  display: none !important;
+}
+
+* {
+  -ms-overflow-style: none !important; /* IE & Edge */
+  scrollbar-width: none !important; /* Firefox */
+}
+
+@keyframes star-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 4px rgba(214, 176, 96, 0.4)) drop-shadow(0 0 12px rgba(214, 176, 96, 0.2));
+  }
+  50% {
+    filter: drop-shadow(0 0 10px rgba(214, 176, 96, 0.9)) drop-shadow(0 0 25px rgba(255, 235, 176, 0.5));
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.brilliant-stars {
+  background: linear-gradient(
+    90deg, 
+    #D6B060 0%, 
+    #FFEBB0 25%, 
+    #B88E3C 50%, 
+    #FFEBB0 75%, 
+    #D6B060 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 3s linear infinite, star-glow 2.5s ease-in-out infinite;
+  display: inline-block;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
