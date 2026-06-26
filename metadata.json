@@ -1,0 +1,6 @@
+{
+  "name": "Sala de Despecho Colombia",
+  "description": "El bar de despecho más exclusivo e innovador de Colombia. Un concepto único inspirado en el canto, la nostalgia y la rumba chic.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
