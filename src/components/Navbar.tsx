@@ -73,10 +73,10 @@ export default function Navbar({ onNavClick }: NavbarProps) {
       {/* CONTINUOUS MARQUEE RUNNING BAND FOR PLAYFUL RE-ENGAGEMENT, INTEGRATED DIRECTLY TO THE NAVBAR */}
       <div className="w-full border-b border-white/10 py-3 overflow-hidden select-none bg-black/10">
         <div className="flex w-max whitespace-nowrap animate-[marquee_25s_linear_infinite] gap-0 text-[10px] sm:text-[11px] font-bold italic tracking-[0.25em] uppercase text-white font-serif">
-          <span>✹ EL TEMPLO DEL DESAHOGO ✹ DEJA EL CUENTO Y PIDE UN GUARO ✹ EL AMOR SIEMPRE VUELVE ✹ CANTA A GRITO HERIDO{"\u00a0"}</span>
-          <span>✹ EL TEMPLO DEL DESAHOGO ✹ DEJA EL CUENTO Y PIDE UN GUARO ✹ EL AMOR SIEMPRE VUELVE ✹ CANTA A GRITO HERIDO{"\u00a0"}</span>
-          <span>✹ EL TEMPLO DEL DESAHOGO ✹ DEJA EL CUENTO Y PIDE UN GUARO ✹ EL AMOR SIEMPRE VUELVE ✹ CANTA A GRITO HERIDO{"\u00a0"}</span>
-          <span>✹ EL TEMPLO DEL DESAHOGO ✹ DEJA EL CUENTO Y PIDE UN GUARO ✹ EL AMOR SIEMPRE VUELVE ✹ CANTA A GRITO HERIDO{"\u00a0"}</span>
+          <span>✹ 4X2 EN MARGARITAS TODOS LOS MIÉRCOLES ✹ 4X2 EN MARGARITAS TODOS LOS MIÉRCOLES{"\u00a0"}</span>
+          <span>✹ 4X2 EN MARGARITAS TODOS LOS MIÉRCOLES ✹ 4X2 EN MARGARITAS TODOS LOS MIÉRCOLES{"\u00a0"}</span>
+          <span>✹ 4X2 EN MARGARITAS TODOS LOS MIÉRCOLES ✹ 4X2 EN MARGARITAS TODOS LOS MIÉRCOLES{"\u00a0"}</span>
+          <span>✹ 4X2 EN MARGARITAS TODOS LOS MIÉRCOLES ✹ 4X2 EN MARGARITAS TODOS LOS MIÉRCOLES{"\u00a0"}</span>
         </div>
       </div>
     </nav>

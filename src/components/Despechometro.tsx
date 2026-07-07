@@ -1,6 +1,7 @@
 import { useState, FormEvent } from "react";
 import { EX_RESPONSES, REASONS_FOR_DESPECHO } from "../data";
 import { RefreshCw, Award, ShieldAlert, HeartCrack } from "lucide-react";
+import EL_DESPECHOMETRO_LOGO from "../../assets/despechometro/eldespechometro.png";
 
 export default function Despechometro() {
   const [exName, setExName] = useState("");
@@ -25,7 +26,7 @@ export default function Despechometro() {
         score: Math.floor(65 + Math.random() * 35) // Random high score of despecho
       });
       setIsCalculating(false);
-    }, 1800);
+    }, 3000);
   };
 
   const resetCalculator = () => {
@@ -39,16 +40,18 @@ export default function Despechometro() {
       <div className="max-w-4xl mx-auto">
         
         {/* Header */}
-        <div className="text-center mb-10">
+        <div className="text-center mb-8">
           <span className="bg-white border border-gray-250 text-[#1A1A1A] [text-shadow:none] text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full inline-block mb-3 shadow-xs">
             JUEGO INTERACTIVO
           </span>
-          <h2 className="text-4xl sm:text-5xl font-serif font-light italic text-[#1A1A1A] tracking-tight" style={{ fontFamily: "'Playfair Display', serif" }}>
-            El Despechómetro
-          </h2>
-          <p className="text-[#1A1A1A]/80 font-semibold tracking-wider text-xs uppercase max-w-xl mx-auto mt-3">
-            ¿No sabes con qué canción empezar o qué cóctel pedir hoy para pasar el trago amargo? Nuestro algoritmo sagrado te diagnostica de inmediato.
-          </p>
+          <div className="flex justify-center w-full -mt-40 sm:-mt-[17rem] md:-mt-[20rem] -mb-45 sm:-mb-[17rem] md:-mb-[21rem]">
+            <img 
+              src={EL_DESPECHOMETRO_LOGO} 
+              alt="El Despechómetro" 
+              className="h-96 sm:h-[36rem] md:h-[46rem] max-w-[100%] object-contain"
+              referrerPolicy="no-referrer"
+            />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-stretch">
@@ -135,9 +138,8 @@ export default function Despechometro() {
                     <HeartCrack className="h-8 w-8 text-[#B31B1B] animate-float" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-bold text-[#1A1A1A] font-serif" style={{ fontFamily: "'Playfair Display', serif" }}>Consola del Despechómetro Vacía</h4>
                     <p className="text-xs text-gray-500 font-medium max-w-sm mx-auto mt-2 leading-relaxed">
-                      Escribe el nombre de tu ex en el módulo de la izquierda, elige la categoría de fracaso amoroso y presiona el botón para recibir tu receta de coctelera y música sugerida.
+                      ¿No sabes con qué canción empezar o qué cóctel pedir hoy para pasar el trago amargo? Nuestro algoritmo sagrado te diagnostica de inmediato.
                     </p>
                   </div>
                 </div>

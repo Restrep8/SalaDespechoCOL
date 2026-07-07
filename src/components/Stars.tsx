@@ -1,25 +1,21 @@
 import zImg from "@/assets/stars/Z.png";
 import vImg from "@/assets/stars/V.png";
 import mtImg from "@/assets/stars/MT.png";
+import lsdleLogo from "@/assets/stars/LSDLE.png";
 
 export default function Stars() {
   return (
-    <section id="lookbook" className="bg-[#E5E2D9] pt-8 pb-8 px-4 sm:px-6 lg:px-8">
+    <section id="lookbook" className="bg-[#E5E2D9] pt-2 sm:pt-4 md:pt-5 pb-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1600px] mx-auto w-full">
-        {/* Elegant Title matching the brand's editorial style */}
-        <div className="text-center mb-6 space-y-2">
-          <h1 
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-light italic tracking-tight leading-[0.95] text-black text-center"
-              style={{ fontFamily: "'Playfair Display', serif" }}
-            >
-              sala de las <br />
-              <span className="brilliant-stars" style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800 }}>ESTRELLAS</span>
-          </h1>
+        {/* Elegant Title replacement with image */}
+        <div className="flex justify-center w-full -mt-6 sm:-mt-10 md:-mt-14 -mb-8 sm:-mb-10 md:-mb-14">
+          <img 
+            src={lsdleLogo} 
+            alt="La Sala de las Estrellas" 
+            className="h-44 sm:h-64 md:h-80 max-w-[95%] object-contain"
+            referrerPolicy="no-referrer"
+          />
         </div>
-
-        {/* Dynamic divider line under title */}
-        <div className="border-t border-black w-full mb-8" />
-        
         {/* Triple Vertically Elongated Posters with sharp square corners */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-0">
           

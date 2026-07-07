@@ -6,21 +6,8 @@ export default function Reviews() {
   const [confesiones, setConfesiones] = useState<Confesion[]>([]);
 
   useEffect(() => {
-    const saved = localStorage.getItem("saladespecho_confesiones");
-    if (saved) {
-      try {
-        const parsed = JSON.parse(saved).filter((c: Confesion) => c.id !== "cf3");
-        setConfesiones(parsed);
-        localStorage.setItem("saladespecho_confesiones", JSON.stringify(parsed));
-      } catch (e) {
-        const filtered = INITIAL_CONFESIONES.filter((c: Confesion) => c.id !== "cf3");
-        setConfesiones(filtered);
-      }
-    } else {
-      const filtered = INITIAL_CONFESIONES.filter((c: Confesion) => c.id !== "cf3");
-      setConfesiones(filtered);
-      localStorage.setItem("saladespecho_confesiones", JSON.stringify(filtered));
-    }
+    const filtered = INITIAL_CONFESIONES.filter((c: Confesion) => c.id !== "cf3");
+    setConfesiones(filtered);
   }, []);
 
   // Predefined background colors for the sticky notes to give an ultra-chic colorful modern wall vibe

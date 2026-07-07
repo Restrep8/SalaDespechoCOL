@@ -1,10 +1,6 @@
 import { Sede } from "../types";
 
-interface ReservationsProps {
-  onSuccess?: () => void;
-}
-
-export default function Reservations({ onSuccess }: ReservationsProps) {
+export default function Reservations() {
   const sedesList = [
     {
       type: Sede.Poblado,
@@ -33,7 +29,7 @@ export default function Reservations({ onSuccess }: ReservationsProps) {
   ];
 
   return (
-    <section id="reservas" className="bg-[#8CE2D6] pt-20 pb-16 px-4 md:px-8 relative overflow-hidden">
+    <section id="reservas" className="bg-[#8CE2D6] py-14 sm:py-16 md:py-18 px-4 md:px-8 relative overflow-hidden">
       
       {/* Background patterns representing elegant subtle grid layout */}
       <div className="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none">
@@ -50,7 +46,7 @@ export default function Reservations({ onSuccess }: ReservationsProps) {
       <div className="max-w-4xl mx-auto relative z-10">
         
         {/* Retro Title replacement with image */}
-        <div className="text-center mb-10 flex flex-col items-center">
+        <div className="text-center mb-10 sm:mb-12 md:mb-14 flex flex-col items-center">
           <img
             src="https://www.saladedespecho.mx/wp-content/uploads/2025/03/Recurso-1-1536x171.png"
             alt="Reservaciones"

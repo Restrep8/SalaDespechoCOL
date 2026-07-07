@@ -2,16 +2,17 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 
-// Import local images from assets/images to bypass anti-hotlinking restrictions
-import SD_FOTO1 from "../../assets/images/SD_FOTO1-1536x1024.webp";
-import SD_FOTO3 from "../../assets/images/SD_FOTO3-1536x1024.webp";
-import SD_FOTO5 from "../../assets/images/SD_FOTO5-1536x1024.webp";
-import SD_FOTO6 from "../../assets/images/SD_FOTO6-1536x1024.webp";
-import SD_FOTO7 from "../../assets/images/SD_FOTO7-1536x1024.webp";
-import SD_FOTO8 from "../../assets/images/SD_FOTO8-1536x1024.webp";
-import SD_FOTO9 from "../../assets/images/SD_FOTO9-1920x1280.webp";
-import SD_FOTO10 from "../../assets/images/SD_FOTO10-1536x1024.webp";
-import SD_FOTO11 from "../../assets/images/SD_FOTO11-1536x1024.webp";
+// Import local images from assets/carrusel to bypass anti-hotlinking restrictions
+import ASVED_LOGO from "../../assets/carrusel/ASVED.png";
+import SD_FOTO1 from "../../assets/carrusel/SD_FOTO1-1536x1024.webp";
+import SD_FOTO3 from "../../assets/carrusel/SD_FOTO3-1536x1024.webp";
+import SD_FOTO5 from "../../assets/carrusel/SD_FOTO5-1536x1024.webp";
+import SD_FOTO6 from "../../assets/carrusel/SD_FOTO6-1536x1024.webp";
+import SD_FOTO7 from "../../assets/carrusel/SD_FOTO7-1536x1024.webp";
+import SD_FOTO8 from "../../assets/carrusel/SD_FOTO8-1536x1024.webp";
+import SD_FOTO9 from "../../assets/carrusel/SD_FOTO9-1920x1280.webp";
+import SD_FOTO10 from "../../assets/carrusel/SD_FOTO10-1536x1024.webp";
+import SD_FOTO11 from "../../assets/carrusel/SD_FOTO11-1536x1024.webp";
 
 const slideVariants = {
   enter: (direction: number) => ({
@@ -66,14 +67,16 @@ export default function Carrusel() {
   return (
     <section id="galeria-fotos" className="bg-[#FFFDF9] pt-12 pb-8 px-4 sm:px-6 lg:px-8 select-none">
       <div className="max-w-6xl mx-auto flex flex-col items-center w-full">
-        {/* Elegant clean sans-serif bold title matching user request with symmetric spacing */}
-        <h2 className="text-2xl sm:text-4xl md:text-[2.6rem] font-sans font-bold text-[#111111] tracking-tight mb-10 text-center leading-none">
-          ¡Así se vive el Despecho!
-        </h2>
+        {/* Elegant clean logo image matching user request with symmetric spacing */}
+        <div className="flex justify-center w-full -mt-38 sm:-mt-36 md:-mt-52 -mb-26 sm:-mb-30 md:-mb-38">
+          <img 
+            src={ASVED_LOGO} 
+            alt="¡Así se vive el Despecho!" 
+            className="h-72 sm:h-[26rem] md:h-[32rem] max-w-[95%] object-contain"
+            referrerPolicy="no-referrer"
+          />
+        </div>
 
-        {/* Elegant line divider exactly matching requested styling */}
-        <div className="border-t border-black w-full max-w-6xl mx-auto mb-8" />
-        
         {/* Beautiful panoramic wide image carousel without black borders, padding or extra outlines */}
         <div className="relative w-full max-w-6xl aspect-[1.2/1] md:aspect-[1.6/1] bg-zinc-100 rounded-[2rem] overflow-hidden shadow-2xl">
           <div className="relative w-full h-full overflow-hidden">
