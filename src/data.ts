@@ -41,7 +41,7 @@ export const EX_RESPONSES = [
     vibe: "Poco Hombre / Poca Mujer",
     text: "Ese nivel de tibieza es digno de un circo ambulante. No llores por payasos, ven a bailar reggaeton y despecho de corrido.",
     action: "Carajillo",
-    song: "Y cémo es él - José Luis Perales"
+    song: "Y cómo es él - José Luis Perales"
   },
   {
     vibe: "Nostalgia Cantinera",
