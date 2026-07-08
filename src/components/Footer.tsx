@@ -18,7 +18,7 @@ const Footer = forwardRef<HTMLElement>((_, ref) => {
             referrerPolicy="no-referrer"
           />
           
-          <p className="text-[12px] font-light text-white uppercase tracking-tight mb-2">EN COLABORACIÓN CON:</p>
+          <p className="text-[12px] font-light text-white uppercase tracking-tight mb-2">UNA MARCA OPERADA POR:</p>
           
           <img 
             src={TRG_LOGO} 

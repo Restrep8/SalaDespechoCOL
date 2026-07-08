@@ -13,10 +13,13 @@ export default function Who() {
           />
         </div>
         <p className="text-black font-sans font-normal text-xs sm:text-sm max-w-2xl mx-auto leading-relaxed uppercase tracking-widest text-center mt-0">
-          Para crear una experiencia inolvidable y casi canónica, exponemos lo mejor de la cultura pop mexicana:
+          Somos el templo donde las emociones se cantan.
           <br />
           <br />
-          Platillos exquisitos y cantineros. Coctelería deliciosa y divertida. Y una curaduría musical para cantar desde el corazón y (des)ahogar cada una de tus penas.
+          Un concepto único que reúne música, gastronomía, coctelería y entretenimiento para convertir cada despecho, celebración o reencuentro en una experiencia inolvidable.
+          <br />
+          <br />
+          Aquí no importa cómo llegues, siempre hay una canción esperándote.
         </p>
       </div>
     </section>
