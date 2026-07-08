@@ -26,7 +26,7 @@ export default function Despechometro() {
         score: Math.floor(65 + Math.random() * 35) // Random high score of despecho
       });
       setIsCalculating(false);
-    }, 3000);
+    }, 2500);
   };
 
   const resetCalculator = () => {
@@ -214,18 +214,15 @@ export default function Despechometro() {
                   <div className="bg-emerald-50 border border-emerald-100 rounded-xl p-3 text-center flex items-center justify-center gap-2">
                     <Award className="h-5 w-5 text-emerald-600 flex-shrink-0" />
                     <span className="text-[11px] font-bold text-emerald-800 leading-relaxed uppercase tracking-tight">
-                      ¡Estás a salvo! Este diagnóstico te otorga un 10% de descuento en tu primer trago de "{result.song.split(" - ")[0]}". Muestra tu ticket en barra.
+                      ¡Estás a salvo! Este diagnóstico te otorga un shot de bienvenida. Muestra tu ticket en barra.
                     </span>
                   </div>
 
                 </div>
               )}
-
             </div>
           </div>
-
         </div>
-
       </div>
     </section>
   );

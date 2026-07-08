@@ -2,7 +2,7 @@ import menuImg from "@/assets/menu/menu.png";
 
 export default function Menu() {
   return (
-    <section id="menu" className="bg-[#FFFDF9] py-8 px-4 sm:px-6 lg:px-8 select-none">
+    <section id="menu" className="bg-[#FFF3C4] py-8 px-4 sm:px-6 lg:px-8 select-none">
       <div className="max-w-md sm:max-w-lg mx-auto flex flex-col items-center w-full">
         <img
           src={menuImg}

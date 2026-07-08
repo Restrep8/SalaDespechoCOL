@@ -45,7 +45,7 @@ export default function App() {
     }
     const element = document.getElementById(sectionId);
     if (element) {
-      const offset = 73; // height of sticky navbar
+      const offset = 72; // height of sticky navbar
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
       
