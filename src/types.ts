@@ -4,10 +4,3 @@ export enum Sede {
   Cartagena = "Cartagena",
   Bogota = "Bogotá"
 }
-
-export interface Confesion {
-  id: string;
-  mensaje: string;
-}
-
-

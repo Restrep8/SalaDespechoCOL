@@ -1,20 +1,3 @@
-import { Confesion } from "./types";
-
-export const INITIAL_CONFESIONES: Confesion[] = [
-  {
-    id: "cf1",
-    mensaje: "Vine aquí a cantar '200 copas' a grito herido. Si me ves llorando no es por ti Sofia, es el limón del tequila. Mentira, sí te lloro jodida."
-  },
-  {
-    id: "cf2",
-    mensaje: "Tres meses diciéndome que 'no quería presiones' pero ayer lo vi de la mano con otra. Mateo, sos un payaso de primera categoría."
-  },
-  {
-    id: "cf4",
-    mensaje: "Me dejó en azul la semana pasada y hoy me sale con un 'Hola perdida'. Aquí le dedico la de Paquita: ¡Rata de dos patas!"
-  }
-];
-
 export const REASONS_FOR_DESPECHO = [
   "Me pusieron los cachos",
   "Quiere volver pero ya me valoré",

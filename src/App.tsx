@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
 import Reservations from "./components/Reservations";
 import Menu from "./components/Menu";
-import Reviews from "./components/Reviews";
+import Ubis from "./components/Ubis";
 import Despechometro from "./components/Despechometro";
 import Stars from "./components/Stars";
 import Carrusel from "./components/Carrusel";
@@ -86,7 +86,7 @@ export default function App() {
         <Despechometro />
 
         {/* ANONYMOUS GUESTBOOK MURO COMPONENT */}
-        <Reviews />
+        <Ubis />
 
         {/* INSTANTES DE LA SALITA - Photo Carousel below Planifica Tu Visita */}
         <Carrusel />
