@@ -28,9 +28,9 @@ const LOCATIONS: LocationItem[] = [
     city: "Medellín, Colombia",
     address: "Km 5 Vía Las Palmas, Mall Le Mont",
     schedule: "Jueves a Domingo desde las 5:00 PM",
-    mapUrl: "https://maps.google.com/?q=Sala+de+Despecho+Le+Mont+Medellin",
+    mapUrl: "https://maps.google.com/?q=Sala+de+Despecho+Le+Mont+Envigado+Colombia",
     reservationUrl: "https://www.covermanager.com/reserve/module_restaurant/restaurante-sala-de-despecho-lemont/spanish",
-    embedUrl: "https://maps.google.com/maps?q=Sala%20de%20Despecho%20Le%20Mont%20Medellin&t=&z=15&ie=UTF8&iwloc=&output=embed"
+    embedUrl: "https://maps.google.com/maps?q=Sala%20de%20Despecho%20Le%20Mont%20Envigado%20Colombia&t=&z=15&ie=UTF8&iwloc=&output=embed"
   },
   {
     id: "cartagena",
@@ -38,9 +38,9 @@ const LOCATIONS: LocationItem[] = [
     city: "Cartagena, Colombia",
     address: "Calle #32-130, Plaza de la Aduana",
     schedule: "Miércoles a Domingo desde las 5:00 PM",
-    mapUrl: "https://maps.google.com/?q=Sala+de+Despecho+Cartagena",
+    mapUrl: "https://share.google/5ebvMAlTd5SCZPZAB",
     reservationUrl: "https://www.covermanager.com/reserve/module_restaurant/sala-de-despecho-cartagena/spanish",
-    embedUrl: "https://maps.google.com/maps?q=Sala%20de%20Despecho%20Cartagena&t=&z=15&ie=UTF8&iwloc=&output=embed"
+    embedUrl: "https://maps.google.com/maps?q=Sala%20de%20Despecho,%20Cartagena,%20Colombia&t=&z=15&ie=UTF8&iwloc=&output=embed"
   },
   {
     id: "bogota",
@@ -48,9 +48,9 @@ const LOCATIONS: LocationItem[] = [
     city: "Bogotá, Colombia",
     address: "Carrera 13A #93-91, Piso 3",
     schedule: "Miércoles a Sábado desde las 5:00 PM",
-    mapUrl: "https://maps.google.com/?q=Sala+de+Despecho+Bogota",
+    mapUrl: "https://maps.google.com/?q=Sala+de+Despecho+Bogota+Colombia",
     reservationUrl: "https://www.covermanager.com/reserve/module_restaurant/sala-de-despecho-bogota/spanish",
-    embedUrl: "https://maps.google.com/maps?q=Sala%20de%20Despecho%20Bogota&t=&z=15&ie=UTF8&iwloc=&output=embed"
+    embedUrl: "https://maps.google.com/maps?q=Sala%20de%20Despecho,%20Carrera%2013A%20%2393-91,%20Bogota,%20Colombia&t=&z=15&ie=UTF8&iwloc=&output=embed"
   }
 ];
 
