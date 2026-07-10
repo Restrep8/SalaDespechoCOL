@@ -57,9 +57,9 @@ const LOCATIONS: LocationItem[] = [
 export default function Ubis() {
   const noteColors = [
     "bg-[#FFF3C4]", // Soft Yellow
-    "bg-[#FFD2D7]", // Soft Pink
-    "bg-[#C3F6F0]", // Pastel Turquoise
-    "bg-[#D86B5B]", // Soft Pastel Red
+    "bg-[#C3F6F0]", // Soft Pink
+    "bg-[#FFD2D7]", // Pastel Turquoise
+    "bg-[#8ED2BF]", // Pastel Green
   ];
 
   return (
@@ -85,27 +85,27 @@ export default function Ubis() {
                 {/* Header info */}
                 <div className="w-full space-y-4 flex flex-col items-center">
                   <div className="text-center">
-                    <span className={`text-[10px] font-bold tracking-widest uppercase ${subtitleColor}`}>
+                    <span className={`text-[10px] font-sans font-bold tracking-widest uppercase ${subtitleColor}`}>
                       {loc.city}
                     </span>
-                    <h3 className={`text-xl sm:text-2xl font-serif font-extrabold tracking-tight mt-1 ${titleColor}`}>
+                    <h3 className={`text-xl sm:text-2xl font-sans font-black tracking-tight mt-1 ${titleColor}`}>
                       {loc.name}
                     </h3>
                   </div>
 
                   <div className="space-y-2.5 pt-1 flex flex-col items-start w-full">
                     {/* Address Detail */}
-                    <div className="flex items-start gap-2.5 text-left">
-                      <MapPin className={`h-4.5 w-4.5 mt-0.5 flex-shrink-0 ${iconColor}`} />
-                      <span className={`text-xs font-semibold uppercase tracking-wider font-sans leading-tight ${infoColor}`}>
+                    <div className="flex items-center gap-2.5 text-left">
+                      <MapPin className={`h-4.5 w-4.5 flex-shrink-0 ${iconColor}`} />
+                      <span className={`text-xs font-semibold uppercase tracking-wider font-sans leading-none ${infoColor}`}>
                         {loc.address}
                       </span>
                     </div>
 
                     {/* Schedule Detail */}
-                    <div className="flex items-start gap-2.5 text-left">
-                      <Clock className={`h-4.5 w-4.5 mt-0.5 flex-shrink-0 ${iconColor}`} />
-                      <span className={`text-xs font-medium font-sans leading-tight ${infoColor}`}>
+                    <div className="flex items-center gap-2.5 text-left">
+                      <Clock className={`h-4.5 w-4.5 flex-shrink-0 ${iconColor}`} />
+                      <span className={`text-xs font-semibold uppercase tracking-wider font-sans leading-none ${infoColor}`}>
                         {loc.schedule}
                       </span>
                     </div>

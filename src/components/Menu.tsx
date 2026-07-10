@@ -1,5 +1,4 @@
 import menuImg from "@/assets/menu/menu.png";
-import { ExternalLink } from "lucide-react";
 
 export default function Menu() {
   return (
@@ -12,16 +11,37 @@ export default function Menu() {
           referrerPolicy="no-referrer"
         />
         
-        <a
-          href="https://fiweex.com/links/saladedespechocolombia"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 bg-[#B31B1B] hover:bg-[#1A1A1A] text-[#FFFDF9] font-sans font-bold uppercase tracking-widest text-xs px-8 py-3.5 rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0"
-          id="btn-ver-menu"
-        >
-          <span>Toca aquí</span>
-          <ExternalLink className="h-3.5 w-3.5" />
-        </a>
+        <div className="w-full flex flex-col sm:flex-row items-center justify-center gap-4 flex-wrap">
+          <a
+            href="https://fiweex.com/sistema/img/pdf/CARTA%20ACTUAL%20%20MED%20JUNIO%202026.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#B31B1B] hover:bg-[#1A1A1A] text-[#FFFDF9] font-sans font-bold uppercase tracking-widest text-xs px-8 py-3.5 rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0"
+            id="btn-menu-medellin"
+          >
+            <span>Medellín</span>
+          </a>
+
+          <a
+            href="https://fiweex.com/sistema/img/pdf/CTG%20JUNIO%202026.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#B31B1B] hover:bg-[#1A1A1A] text-[#FFFDF9] font-sans font-bold uppercase tracking-widest text-xs px-8 py-3.5 rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0"
+            id="btn-menu-cartagena"
+          >
+            <span>Cartagena</span>
+          </a>
+
+          <a
+            href="https://fiweex.com/sistema/img/pdf/CARTA%20BOG%20JUNIO%202026.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#B31B1B] hover:bg-[#1A1A1A] text-[#FFFDF9] font-sans font-bold uppercase tracking-widest text-xs px-8 py-3.5 rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0"
+            id="btn-menu-bogota"
+          >
+            <span>Bogotá</span>
+          </a>
+        </div>
       </div>
     </section>
   );
