@@ -6,7 +6,7 @@ const Footer = forwardRef<HTMLElement>((_, ref) => {
   return (
     <footer 
       ref={ref}
-      className="fixed bottom-0 left-0 w-full z-0 bg-black text-gray-400 text-[11px] pt-6 pb-12 px-4 md:px-8 border-t border-white/5 text-center space-y-2 md:space-y-3"
+      className="fixed bottom-0 left-0 w-full z-0 bg-black text-gray-400 text-[11px] pt-4 pb-6 px-4 md:px-8 border-t border-white/5 text-center space-y-2 md:space-y-3"
     >
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 md:gap-8">
         
